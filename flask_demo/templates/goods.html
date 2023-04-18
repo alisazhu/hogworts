@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+<!--定义一个表格-->
+    <thead>
+    <th>商品名称</th>
+    <th>商品价格</th>
+    </thead>
+    <tbody>
+    <meta charset="UTF-8">
+    {% for goods in goods %}
+        <tr>
+            <td>{{goods.name}}</td>
+            <td>{{goods.price}}</td>
+        </tr>   {% endfor %}  <!--for循环结束-->
+    </tbody>
+</table>
+</body>
+
+</html>
